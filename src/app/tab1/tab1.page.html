@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+
+  <!-- [ngStyle]="{'background-image': 'url('+background+')'}" -->
+  <div id="profile" 
+  *ngIf="photo && name && email">
+
+    <div class="photo">
+      <img class="pic" [src]="photo" alt="">
+      <img class="logo" src="../../assets/img/user-logo.png" alt="">
+    </div>
+
+    <div class="main">
+      <h5 class="glow">
+        <strong>
+          <ion-icon class="glow" name="person-circle"></ion-icon>
+          Usuário:
+        </strong>
+        {{name}}
+      </h5>
+      <h5 class="glow">
+        <strong>
+          <ion-icon class="glow" name="mail"></ion-icon>
+          Email:
+        </strong>
+        {{email}}
+      </h5>
+    </div>
+
+    <div class="travels">
+      <h1>FISCAL</h1>
+    </div>
+
+  </div>
+</ion-content>

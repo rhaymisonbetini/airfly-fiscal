@@ -1,0 +1,7 @@
+{
+  "name": "airflyuser",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

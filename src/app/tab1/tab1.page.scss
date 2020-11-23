@@ -1,0 +1,93 @@
+ion-content {
+    --background: var(--ion-color-dark);
+}
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+
+    -webkit-box-shadow: 0 0 20px whitesmoke;
+    -moz-box-shadow: 0 0 20px whitesmoke;
+    box-shadow: 0 0 20px whitesmoke;
+
+    .pic {
+        border: 3px solid #ffffff;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 60px;
+    }
+}
+
+#profile {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 70%;
+    background-color: var(--ion-color-primary);
+    margin-top: -4%;
+    opacity: 0;
+
+    background-repeat: no-repeat;
+    background-position: contain ;
+
+    .main {
+        color: #ffffff;
+        position: relative;
+        left: 10%;
+        top: 45%;
+    }
+
+    .travels {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        top: 53%;
+
+        .blocote {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 8px;
+            padding-top: 10px;
+
+            width: 40%;
+            max-width: 280px;
+            margin-right: 10px;
+
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.075);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.075);
+
+            -webkit-box-shadow: 0 0 20px whitesmoke;
+            -moz-box-shadow: 0 0 20px whitesmoke;
+            box-shadow: 0 0 20px whitesmoke;
+
+            h5 {
+                color: #000000;
+            }
+
+            ion-icon {
+                width: 50px;
+                height: 50px;
+                color: #000000;
+            }
+        }
+    }
+}
+

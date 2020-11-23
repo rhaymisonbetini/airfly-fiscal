@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+
+  <ion-grid id="main">
+    <ion-row>
+      <ion-col class="title" size="12">
+        <h1>Validar Ticket de embarque</h1>
+        <img src="../../assets/img/logo.png" alt="">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-button color="dark" expand="full" (click)="scanBarcode()">Ler QRcode</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid *ngIf="ticket &&  !consumer">
+    <ion-row id="traver">
+      <ion-col size="12">
+        <h2>Confirme os dados</h2>
+      </ion-col>
+      <ion-col size="4">
+        <img [src]="ticket?.user?.photo" alt="">
+      </ion-col>
+      <ion-col size="8" class="datas">
+        <h6> <ion-icon name="person-outline"></ion-icon>Nome: {{ticket?.user?.username}}</h6>
+        <h6><ion-icon name="airplane-outline"></ion-icon>De: {{ticket?.origem}}</h6>
+        <h6><ion-icon name="airplane-outline"></ion-icon>Para: {{ticket?.destino}}</h6>
+        <h6><ion-icon name="calendar-outline"></ion-icon>Dia: {{ticket?.dia_viagem}}</h6>
+        <h6><ion-icon name="time-outline"></ion-icon>Horário: {{ticket?.hora_viagem}}</h6>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-button color="success" expand="full" (click)="confirmTravel(ticket.codigo)">Confirmar embarque</ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
