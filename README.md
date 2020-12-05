@@ -10,7 +10,7 @@
   Após clonar o repositório você deve rodar o seguinte comando.
 
  ```shell
-   cd airfly-user
+   cd airfly-fiscal
 
    npm install
    
